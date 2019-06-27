@@ -1,0 +1,9 @@
+#web配置
+server:
+  port: 8080
+  connectionTimeout: 180000
+#spring配置
+spring:
+  application:
+    name: elasticsearch-learning
+
