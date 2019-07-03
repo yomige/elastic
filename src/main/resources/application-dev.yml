@@ -4,6 +4,8 @@ server:
   connectionTimeout: 180000
 #spring配置
 spring:
+  profiles:
+    include: appConf
   application:
     name: elasticsearch-learning
 

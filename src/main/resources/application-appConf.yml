@@ -1,0 +1,5 @@
+# 应用配置项
+elasticsearch:
+  host: 10.47.0.96
+  port: 9200
+  single-pipline: single_attachment
