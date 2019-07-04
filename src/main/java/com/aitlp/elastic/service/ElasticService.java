@@ -55,7 +55,7 @@ public class ElasticService {
      */
     public SearchSourceBuilder createSearchSourceBuilder(List<QueryBuilder> queryBuilders, List<String> highlightItems) {
         SearchSourceBuilder searchBuilder = new SearchSourceBuilder();
-        if (ObjectUtils.isEmpty(queryBuilders)) {
+        if (!ObjectUtils.isEmpty(queryBuilders)) {
             // 查询
             for (QueryBuilder queryBuilder : queryBuilders) {
                 searchBuilder.query(queryBuilder);
